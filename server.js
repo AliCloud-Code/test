@@ -62,8 +62,8 @@ const PORT = process.env.PORT || 3000;
 const isProduction = process.env.NODE_ENV === 'production';
 
 // Google OAuth config — use env vars for production, hardcoded for dev
-const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID || '';
-const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET || '';
+const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID || '232';
+const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET || '323';
 const BASE_URL = process.env.BASE_URL || `http://localhost:${PORT}`;
 
 // ============================================
