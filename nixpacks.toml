@@ -1,0 +1,11 @@
+[variables]
+NODE_VERSION = "20"
+
+[phases.setup]
+nixPkgs = ["nodejs_20"]
+
+[phases.build]
+cmds = ["npm install --production=false", "cd client && npm install && npx vite build", "echo 'Build completed'"]
+
+[start]
+cmd = "node server.js"
